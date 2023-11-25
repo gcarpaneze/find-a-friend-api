@@ -6,24 +6,31 @@
   "scripts": {
     "build": "tsup src",
     "start": "node dist/server.js",
-    "start:dev": "npx tsx watch src/server.ts"
+    "start:dev": "npx tsx watch src/server.ts",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "2.1.0",
+    "@types/bcryptjs": "2.4.6",
     "@types/node": "20.9.0",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "eslint": "8.53.0",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-n": "16.3.1",
     "eslint-plugin-promise": "6.1.1",
+    "prisma": "5.6.0",
     "tsup": "7.2.0",
     "tsx": "4.1.2",
     "typescript": "5.2.2"
   },
   "dependencies": {
+    "@fastify/jwt": "7.2.3",
+    "@prisma/client": "5.6.0",
+    "bcryptjs": "2.4.3",
     "dotenv": "16.3.1",
     "fastify": "4.24.3",
     "zod": "3.22.4"
